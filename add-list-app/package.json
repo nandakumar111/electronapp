@@ -1,0 +1,37 @@
+{
+  "name": "add-list-app",
+  "version": "1.0.0",
+  "description": "Simple Electron Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=app.ico --prune=true --out=release-builds",
+    "package-win": "electron-packager . add-list-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=app.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"CryptoApp\"",
+    "package-linux": "electron-packager . add-list-app --overwrite --asar=true --platform=linux --arch=x64 --icon=app.ico --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandakumar111/electronapp.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-packager": "^12.1.2"
+  },
+  "dependencies": {
+    "bower": "^1.8.4",
+    "jquery": "^3.3.1"
+  },
+  "bugs": {
+    "url": "https://github.com/nandakumar111/electronapp/issues"
+  },
+  "homepage": "https://github.com/nandakumar111/electronapp#readme"
+}
